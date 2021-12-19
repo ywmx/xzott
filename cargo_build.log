@@ -1,0 +1,31 @@
+   Compiling compiler_builtins v0.1.55
+   Compiling core v0.0.0 (/home/nebula/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core)
+   Compiling serde v1.0.116
+   Compiling bitflags v1.2.1
+   Compiling llvm-tools v0.1.1
+   Compiling x86_64 v0.13.2
+   Compiling toml v0.5.6
+   Compiling bootloader v0.9.19 (/home/nebula/.cargo/registry/src/github.com-1ecc6299db9ec823/bootloader-0.9.19)
+   Compiling rustc-std-workspace-core v1.99.0 (/home/nebula/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/rustc-std-workspace-core)
+   Compiling bit_field v0.9.0
+   Compiling zero v0.1.2
+   Compiling fixedvec v0.2.4
+   Compiling usize_conversions v0.2.0
+   Compiling rlibc v1.0.0
+   Compiling xmas-elf v0.6.2
+warning: use of deprecated macro `llvm_asm`: will be removed from the compiler, use asm! instead
+  --> src/main.rs:45:5
+   |
+45 |     llvm_asm!("call $1; ${:private}.spin.${:uid}: jmp ${:private}.spin.${:uid}" ::
+   |     ^^^^^^^^
+   |
+   = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated macro `llvm_asm`: will be removed from the compiler, use asm! instead
+  --> src/main.rs:91:5
+   |
+91 |     llvm_asm!("mov bx, 0x0
+   |     ^^^^^^^^
+
+warning: `bootloader` (bin "bootloader") generated 2 warnings
+    Finished release [optimized + debuginfo] target(s) in 11.20s
